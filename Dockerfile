@@ -1,4 +1,4 @@
-FROM golang 
+FROM golang as build 
 WORKDIR /app
 COPY main.go /app
 RUN go build main.go
